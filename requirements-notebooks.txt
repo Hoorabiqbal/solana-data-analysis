@@ -1,0 +1,13 @@
+# Dependencies to reproduce notebooks/01, 02 and 03
+# (notebook 04 has its own requirements — see the note in README.md)
+pandas==2.3.2
+numpy==2.2.6
+matplotlib
+seaborn
+scipy
+scikit-learn
+statsmodels
+ta
+pandas_ta
+joblib
+holidays

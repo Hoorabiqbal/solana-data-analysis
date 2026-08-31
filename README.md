@@ -4,22 +4,22 @@ End-to-end analysis of Solana (SOL) price data in OHLCV format, covering **01-01
 
 ## Repository structure
 
-├── notebooks/
-│ ├── 01-technical-indicators.ipynb # Fetch OHLCV data, add indicators (ta library)
-│ ├── 02-data-processing-pipeline.ipynb # Full pipeline: cleaning, feature engineering,
-│ │ # outlier treatment, scaling, feature selection
-│ ├── 03-eda-and-modeling.ipynb # Exploratory analysis + baseline model training/eval
-│ └── 04-price-prediction-tft.ipynb # Time-series price prediction with a Temporal
-│ # Fusion Transformer (built for Google Colab)
-├── app/
-│ └── live_dashboard.py # Streamlit dashboard, live SOL price via Binance
-├── data/
-│ ├── raw/ # Original fetched OHLCV data
-│ └── processed/ # Intermediate + final outputs of notebook 02
-├── models/ # Saved scalers (joblib/pickle) used by the pipeline
-├── images/ # Charts and screenshots used below
-├── requirements.txt # Dependencies to run the dashboard
-└── requirements-notebooks.txt # Dependencies to run notebooks 01–03
+## Repository structure
+
+- `notebooks/`
+  - `01-technical-indicators.ipynb` — Fetch OHLCV data, add indicators (`ta` library)
+  - `02-data-processing-pipeline.ipynb` — Full pipeline: cleaning, feature engineering, outlier treatment, scaling, feature selection
+  - `03-eda-and-modeling.ipynb` — Exploratory analysis + baseline model training/eval
+  - `04-price-prediction-tft.ipynb` — Time-series price prediction with a Temporal Fusion Transformer (built for Google Colab)
+- `app/`
+  - `live_dashboard.py` — Streamlit dashboard, live SOL price via Binance
+- `data/`
+  - `raw/` — Original fetched OHLCV data
+  - `processed/` — Intermediate + final outputs of notebook 02
+- `models/` — Saved scalers (joblib/pickle) used by the pipeline
+- `images/` — Charts and screenshots used below
+- `requirements.txt` — Dependencies to run the dashboard
+- `requirements-notebooks.txt` — Dependencies to run notebooks 01–03
 
 ## Notebooks
 
